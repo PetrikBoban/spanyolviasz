@@ -1,0 +1,18 @@
+public CheckBox[,] matrix = new CheckBox[8, 8]; //[sor, oszlop] 
+
+
+ for (int y = 0; y < 8; y++)
+ {
+     for (int x = 0; x < 8; x++)
+     {
+         matrix[y, x] = new CheckBox();
+         matrix[y, x].Location = new Point(57 + y * 20, 120 + x * 20);
+         matrix[y, x].AutoSize = false;
+         matrix[y, x].Size = new Size(20, 20);
+         matrix[y, x].Visible = true;
+         matrix[y, x].Enabled = true;
+         matrix[y, x].Checked = false;
+         matrix[y, x].Text = null;
+         Controls.Add(matrix[y, x]);
+     }
+ }
