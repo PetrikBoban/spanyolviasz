@@ -1,0 +1,18 @@
+SortedSet<int> Ahalmaz = new SortedSet<int>();
+SortedSet<int> Bhalmaz = new SortedSet<int>();
+
+ SortedSet<int> segment = new SortedSet<int>();
+ foreach (var item in Ahalmaz)
+ {
+     foreach (var item1 in Bhalmaz)
+     {
+         if (item == item1) { segment.Add(item);
+             break;
+         }
+     }
+ }
+ lbmetszet.Items.Clear();
+ foreach (var item in segment)
+ {
+     lbmetszet.Items.Add(item);
+ }
