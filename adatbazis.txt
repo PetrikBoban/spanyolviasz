@@ -1,0 +1,14 @@
+InitializeComponent();
+MySqlConnectionStringBuilder build = new MySqlConnectionStringBuilder { Server = "127.0.0.1", UserID = "root", Password = "", Database = "ingatlan" };
+MySqlConnection kapcsolat = new MySqlConnection(build.ConnectionString);
+kapcsolat.Open();
+
+            var parancs = kapcsolat.CreateCommand();
+            parancs.CommandText = "SQL COMMAND";
+            var read = parancs.ExecuteReader();
+            while (read.Read())
+            {
+               valami(read.getstring(0));
+            }            
+
+kapcsolat.Close();
