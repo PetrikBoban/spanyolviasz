@@ -1,0 +1,51 @@
+ class [nev]
+ {
+     public int Ev;
+     public int id;
+     public int szoba;
+     public int bejel;
+     public int kijel;
+     public int letszam;
+     public int ellatas;
+     public string nev;
+
+     public [nev](int ev, int id, int szoba, int bejel, int kijel, int letszam, int ellatas, string nev)
+     {
+         this.Ev = ev;
+         this.id = id;
+         this.szoba = szoba;
+         this.bejel = bejel;
+         this.kijel = kijel;
+         this.letszam = letszam;
+         this.ellatas = ellatas;
+         this.nev = nev;
+     }
+
+
+ }
+
+List<[nev]> [nev]Lista = new List<[nev]>();
+//main
+
+string[] sorok = File.ReadAllLines("[fajlnev]");
+
+for (int i = 1; i < sorok.Length; i++)
+{
+
+    string[] parts = sorok[i].Split('[elválasztó]');
+
+        int id = int.Parse(parts[0]);
+        int szoba = int.Parse(parts[1]);
+        int bejel = int.Parse(parts[2]);
+        int kijel = int.Parse(parts[3]);
+        int letszam = int.Parse(parts[4]);
+        int ellatas = int.Parse(parts[5]);
+        string nev = parts[6];
+
+        [nev] [nev] = new [nev](ev, id, szoba, bejel, kijel, letszam, ellatas, nev);
+        [nev]Lista.Add([nev]);
+    else if (parts.Length == 1)
+    {
+        ev = int.Parse(parts[0]);
+    }
+}
