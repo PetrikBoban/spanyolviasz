@@ -1,0 +1,127 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace szamokOraiGyak
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            long sum = 0;
+            for (int i = 1; i < 1000000; i++)
+            {
+                string dec = i.ToString();
+                if (!IsPalindrome(dec))
+                    continue;
+
+                string bin = Convert.ToString(i, 2);
+                if (!IsPalindrome(bin))
+                    continue;
+
+                sum += i;
+            }
+
+            Console.WriteLine(sum);
+
+            string fileName = "szamok.txt";
+
+            try
+            {
+                int[,] grid = ReadGridFromFile(fileName, 20, 20);
+                long maxProduct = MaxProductInGrid(grid, 4);
+                Console.WriteLine(maxProduct);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
+        private static bool IsPalindrome(string s)
+        {
+            int l = 0;
+            int r = s.Length - 1;
+            while (l < r)
+            {
+                if (s[l] != s[r])
+                    return false;
+                l++;
+                r--;
+            }
+            return true;
+        }
+
+     
+        //2. feladat
+
+        private static int[,] ReadGridFromFile(string path, int rows, int cols)
+        {
+            var numbers = File.ReadAllText(path)
+                .Split((char[])null, StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
+
+            var grid = new int[rows, cols];
+            int idx = 0;
+            for (int r = 0; r < rows; r++)
+            {
+                for (int c = 0; c < cols; c++)
+                {
+                    grid[r, c] = numbers[idx++];
+                }
+            }
+
+            //foreach(var row in grid) Console.Write(row + " ");
+
+            return grid;
+        }
+
+        private static long MaxProductInGrid(int[,] grid, int length)
+        {
+            int rows = grid.GetLength(0);
+            int cols = grid.GetLength(1);
+            long max = 0;
+
+            for (int r = 0; r < rows; r++)
+            {
+                for (int c = 0; c < cols; c++)
+                {
+                    if (c + length <= cols)
+                    {
+                        long p = 1;
+                        for (int k = 0; k < length; k++) p *= grid[r, c + k];
+                        if (p > max) max = p;
+                    }
+
+                    if (r + length <= rows)
+                    {
+                        long p = 1;
+                        for (int k = 0; k < length; k++) p *= grid[r + k, c];
+                        if (p > max) max = p;
+                    }
+
+                    if (r + length <= rows && c + length <= cols)
+                    {
+                        long p = 1;
+                        for (int k = 0; k < length; k++) p *= grid[r + k, c + k];
+                        if (p > max) max = p;
+                    }
+
+                    if (r + length <= rows && c - length + 1 >= 0)
+                    {
+                        long p = 1;
+                        for (int k = 0; k < length; k++) p *= grid[r + k, c - k];
+                        if (p > max) max = p;
+                    }
+                }
+            }
+
+            return max;
+        }
+    }
+}
