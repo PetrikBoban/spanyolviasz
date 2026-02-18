@@ -1,0 +1,63 @@
+vue telepitő command:
+
+npm create vue@latest Boban_Petrik_Frontend
+
+bootstrap telepitő command (vsc -> terminal -> new terminal) (main.js import code kell)
+
+npm install --save bootstrap
+
+main.js file:
+
+//bootstrap import 
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
+
+
+
+
+vue router telepito (terminal) (kell hozzá new file src mappában router.js)
+
+npm install vue-router@4
+
+router.js file:
+
+import { createRouter, createWebHistory } from "vue-router"
+import Home from '.pages/Home.vue'
+
+const routes = [
+    {
+        path: '/',
+        name: 'Home',
+        component: Home
+    },
+]
+
+const router = createRouter({
+    history:createWebHistory(),
+    routes
+})
+
+export default router
+
+Nem elfelejtendő vissza importálni a main.js-be:
+
+import router from './router.js'
+
+.use(router)
+
+install node modules
+
+npm install
+
+
+
+!!!!! FONTOS ÁTÍRANDÓ
+<router-link class="btn btn-primary" to="#">Hirdessen nálunk!</router-link>
+!!!!! FONTOS ÁTÍRANDÓ
+
+
+axios install command
+
+npm install axios
+
+
