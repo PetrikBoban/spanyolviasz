@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\AAF\\szamonkeres20260317\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|h:\\aaf\\szamonkeres20260317\\pizzeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|solutionrelative:pizzeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|h:\\aaf\\szamonkeres20260317\\menulap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|solutionrelative:menulap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|H:\\AAF\\szamonkeres20260317\\menulap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|solutionrelative:menulap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|H:\\AAF\\szamonkeres20260317\\menulap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|solutionrelative:menulap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|h:\\aaf\\szamonkeres20260317\\pizzeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A953AFFC-5EE3-482B-AD96-1B732BDC8A2E}|szamonkeres20260317.csproj|solutionrelative:pizzeria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "menulap.cs",
+              "DocumentMoniker": "H:\\AAF\\szamonkeres20260317\\menulap.cs",
+              "RelativeDocumentMoniker": "menulap.cs",
+              "ToolTip": "H:\\AAF\\szamonkeres20260317\\menulap.cs",
+              "RelativeToolTip": "menulap.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwD4AAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:39:50.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "menulap.Designer.cs",
+              "DocumentMoniker": "H:\\AAF\\szamonkeres20260317\\menulap.Designer.cs",
+              "RelativeDocumentMoniker": "menulap.Designer.cs",
+              "ToolTip": "H:\\AAF\\szamonkeres20260317\\menulap.Designer.cs",
+              "RelativeToolTip": "menulap.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:47:32.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "menulap.cs [Design]",
+              "DocumentMoniker": "H:\\AAF\\szamonkeres20260317\\menulap.cs",
+              "RelativeDocumentMoniker": "menulap.cs",
+              "ToolTip": "H:\\AAF\\szamonkeres20260317\\menulap.cs [Design]",
+              "RelativeToolTip": "menulap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:32:03.355Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pizzeria.cs",
+              "DocumentMoniker": "H:\\AAF\\szamonkeres20260317\\pizzeria.cs",
+              "RelativeDocumentMoniker": "pizzeria.cs",
+              "ToolTip": "H:\\AAF\\szamonkeres20260317\\pizzeria.cs",
+              "RelativeToolTip": "pizzeria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:30:15.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pizzeria.cs [Design]",
+              "DocumentMoniker": "H:\\AAF\\szamonkeres20260317\\pizzeria.cs",
+              "RelativeDocumentMoniker": "pizzeria.cs",
+              "ToolTip": "H:\\AAF\\szamonkeres20260317\\pizzeria.cs [Design]",
+              "RelativeToolTip": "pizzeria.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:25:37.262Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
